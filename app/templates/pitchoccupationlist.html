@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Pitch details</h1>
+<table border="1" cellpadding=3>
+        <tr>
+            <th>Pitch</th>
+            <th>Price(Kshs./hour)</th>
+        </tr>
+    {% for pitch in allpitches %}
+        <tr>
+            <td>{{ pitch.pitchName }}</td>
+            <td>{{ pitch.cost}}</td> 
+        </tr>
+    {% endfor %}
+</table>
+<hr>
+<h2>Pitches occupation status on {{date}}:</h2>
+<table>
+    <tr>
+        <th>SOCCER PITCH</th>
+        {% for hour in hours %}
+        <th>{{hour}}</th>
+        {% endfor %}
+    </tr>
+{% for pitchoccu in pitchoccus %}
+    <tr>
+        <td>{{ pitchoccu.pitchName }}</td>
+        {% for hour in pitchoccu.pitchhours %}
+        {% if hour %}
+        <td bgcolor="#FF0000"> X </td> 
+        {% else %} 
+        <td bgcolor="#00FF00"> O </td> 
+        {% endif %}
+        {% endfor %} 
+    </tr>
+{% endfor %}
+</table>
+{% endblock %}

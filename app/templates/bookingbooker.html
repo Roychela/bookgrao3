@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>BOOKED FIELDS LIST:</h1>
+
+
+{% for booking in bookings %}
+    <div>
+        <p><strong>EPL TEAM:</strong> {{ booking.title }}</p>
+        <p><strong>PITCH:</strong> {{ booking.pitch}}</p>
+        <p><strong>BOOKER:</strong> {{ booking.booker}}</p>
+        <p><strong>DATE:</strong> {{ booking.date}}</p> 
+        <p><strong>TIME:</strong> {{ booking.time}}</p> 
+        <br>
+    </div>
+{% endfor %}
+
+{% endblock %}

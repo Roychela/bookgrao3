@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* the main container */
+.container {
+  margin-top: 4%;
+}
+
+.card:hover {
+  -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+}
+
+.card-deck {
+  margin-bottom: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: #EEEEEE;
+}
+
+iframe[seamless] {
+  border: none;
+}
+
+.container {
+  margin-top: -0.4%;
+}
+
+#nav-header {
+  overflow: hidden;
+  height: 70px;
+  position: relative;
+  margin-top: 1%;
+  width: 100%;
+}
+
+.hd-top {
+  margin-top: 10%;
+  margin-bottom: 6%;
+  text-align: center;
+  font-family: 'Shadows Into Light Two';
+  letter-spacing: 4px;
+  font-size: calc(3vh + 3vmin + .5vmin);
+}
+
+#nav-header iframe {
+  border: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.fa-money-bill-wave {
+  font-size: 18px;
+  color: green;
+}
+
+.fa-twitter:hover {
+  color: #1dcaff;
+}
+
+.fa-facebook-f:hover {
+  color: #3b5998;
+}
+
+.fa-instagram:hover {
+  color: #e1306c;
+}
+.congrats {
+  width: 30%;
+  margin-top: 10%;
+}
+
+@media only screen and (max-width:450px) {
+  .the-color {
+    width: 100%;
+  }
+
+  #nav-header {
+    height: 200px;
+  }
+
+  .hd-top {
+    display: none;
+  }
+}
